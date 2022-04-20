@@ -1,4 +1,4 @@
-
+from time import sleep
 from turtle import *
 
 color('blue', "green")
@@ -16,7 +16,7 @@ def drawSquare(size):
 #
 def prepareNext(margin):
     penup()
-    forward(int(diff + (newSz - sz)) / 2)
+    forward(margin)
     pendown()
 
 
@@ -26,8 +26,15 @@ def prepareNext(margin):
 
 #   Size of square
 sz = int(input("a = "))
-#   Size multiplier
-szMultiplier = 30
+if sz < 30:
+    print("ERROR: initial size of square should be greater than 30")
+    sys.exit(-1)
+
+#   Size decrement value
+szDecrement = 30
+
+#   Size of a gap between squares
+gapSize = 10
 
 #   Amount of squares
 squareCount = 2
@@ -36,7 +43,12 @@ squareCount = 2
 for i in range(squareCount):
     drawSquare(sz)
 
-    newSz = sz - szMultiplier
-    diff = (newSz - sz) / 2
+    diff = sz + gapSize
     prepareNext(diff)
-    sz = newSz
+    sz = sz - szDecrement
+
+#
+#   Wait for 3 seconds
+#
+sleep(30)
+
