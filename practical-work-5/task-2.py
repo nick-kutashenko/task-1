@@ -35,11 +35,8 @@ a = int(input('a = '))
 #   `b` value is size incrementer
 b = 10
 
-#   Amount of squares
-squareCount = 4
-
 #   Loop to draw all squares
-for _ in range(squareCount):
+while True:
     draw_square(a)
     diff = a + 10
     prepare_next(diff)
