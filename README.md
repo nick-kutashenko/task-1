@@ -1,11 +1,11 @@
-## Parctical work 4
+## Practical work 4
 
 ### Youtube links
 [Task 1](https://youtu.be/pM-IVSMv35M)
 
 [Task 2](https://youtu.be/uQgSrK7895o)
 
-## Parctical work 5
+## Practical work 5
 
 ### Youtube links
 
